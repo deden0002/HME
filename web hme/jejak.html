@@ -20,7 +20,7 @@
   </style>
   
 </head>
-<body>
+<body class="bg-gradient-to-b from-white to-gray-400 font-sans">
 
   <nav class="navbar bg-black p-4">
     <div class="container mx-auto flex justify-between items-center">
@@ -57,11 +57,11 @@
   </section>
 
   <div class="container mx-auto p-6">
-    <section class="bg-white rounded-lg shadow-lg p-6">
+    <section class="p-6">
       <h2 class="text-2xl font-semibold mb-4">Ketua Himpunan 1</h2>
-      <div class="grid grid-cols-2 gap-4">
+      <div class="rounded-lg shadow-md grid grid-cols-2 gap-4">
         <div class="col-span-2">
-            <img src="jai.png" alt="John Doe" style="width: 3cm; height: 4cm;" class="rounded-lg">
+          <img src="jai.png" alt="John Doe" style="width: 3cm; height: 4cm;" class="rounded-lg">
         </div>
         <div>
           <label class="block font-semibold text-gray-600">Nama</label>
@@ -72,17 +72,48 @@
           <p class="text-gray-900">20</p>
         </div>
         <div>
+          <label class="block font-semibold text-gray-600">Alamat</label>
+          <p class="text-gray-900">Jakarta</p>
+        </div>
+        <div class="col-span-1">
           <label class="block font-semibold text-gray-600">Pekerjaan</label>
           <p class="text-gray-900">Mahasiswa</p>
         </div>
-        <div>
-          <label class="block font-semibold text-gray-600">Tempat Tinggal</label>
-          <p class="text-gray-900">Jakarta</p>
+        <div class="col-span-1">
+          <label class="block font-semibold text-gray-600">Kontak</label>
+          <ul class="list-none flex flex-row space-x-4 mb-10">
+            <li>
+                <a href="https://t.me/alalalamala">
+                    <img src="tele.png" alt="telegram" class="w-6 h-6">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/msiraj02/">
+                    <img src="instagram.png" alt="Instagram" class="w-6 h-6">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/@amallamalala?_t=8ehZoHWZtII&_r=1">
+                    <img src="tiktok.png" alt="TikTok" class="w-6 h-6">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@muhammadsirajuddin1462">
+                    <img src="youtube.png" alt="YouTube" class="w-6 h-6">
+                </a>
+            </li>
+            <li>
+              <a href="mailto:info@hotlinenews.com">
+                <p class="text-black underline">muhammadsirajuddin5@gmail.com</p>
+              </a>
+            </li>
+        </ul>
         </div>
-        <!-- Add more fields as needed -->
       </div>
     </section>
   </div>
+  
+  
 
 
   <style>
@@ -118,6 +149,34 @@
     /* Ganti warna teks jika perlu */
     .text-white {
       color: white;
+    }
+
+    .logo {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0 10px;
+        background-size: cover;
+    }
+
+    .email {
+        background-image: url('email.png');
+    }
+
+    .instagram {
+        background-image: url('instagram.png');
+    }
+
+    .youtube {
+        background-image: url('youtube.png');
+    }
+
+    .tiktok {
+        background-image: url('tiktok.png');
+    }
+
+    .telegram {
+      background-image: url('tele.png');
     }
   </style>
   
