@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HME</title>
+  <link rel="icon" type="image/png" href="Logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 12px 20px;
+    }
+
+    /* Ubah tinggi section sampul sesuai kebutuhan */
+    .hero-bg {
+      min-height: 150px;
+      /* Ganti URL dengan path atau link gambar yang ingin digunakan sebagai latar belakang */
+      background-image: url('riuh.jpeg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .kon-bg {
+      min-height: 200px;
+      /* Ganti URL dengan path atau link gambar yang ingin digunakan sebagai latar belakang */
+      background-color: gray;
+      background-size: auto;
+      background-position: center;
+    }
+  
+    /* Ganti font sesuai preferensi Anda */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+  
+    /* Posisi teks di tengah secara horizontal dan vertikal */
+    .text-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; /* Menengahkan vertikal */
+      height: 100%; /* Memberi tinggi 100% untuk section agar tulisan berada di tengah */
+    }
+  
+    /* Ganti warna teks jika perlu */
+    .text-white {
+      color: white;
+    }
+
+    .logo {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0 10px;
+        background-size: cover;
+    }
+
+    .email {
+        background-image: url('email.png');
+    }
+
+    .instagram {
+        background-image: url('instagram.png');
+    }
+
+    .youtube {
+        background-image: url('youtube.png');
+    }
+
+    .tiktok {
+        background-image: url('tiktok.png');
+    }
+
+    .telegram {
+      background-image: url('tele.png');
+    }
+
+    .gallery-item {
+      transition: transform 0.3s ease;
+    }
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+
+    body {
+      background: linear-gradient(to bottom, #ffffff, #b8c6db);
+    }
+  </style>
+  
+</head>
+
+<body>
+
+    <nav class="navbar bg-black p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center">
+          <div class="mr-4">
+            <img src="Logo.png" alt="Logo" class="h-20">
+          </div>
+          <div class="mr-4 ">
+            <img src="EL.png" alt="Logo" class="h-20">
+          </div>
+        </div>
+        <div class="hidden md:flex space-x-4">
+          <a href="beeranda.html" class="text-white">Beranda</a>
+          <a href="organigram.html" class="text-white">Organisasi</a>
+          <a href="galeri.html" class="text-white">Galeri HME</a>
+          <a href="kas.html" class="text-white">Info Keuangan HME</a>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button id="menu-toggle-btn" class="text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+  
+    <section class="hero-bg py-60 text-white">
+        <div class="container mx-auto px-4">
+          <div class="text-center">
+            <h1 class="text-6xl font-bold">Galeri HME</h1>
+          </div>
+        </div>
+    </section>
+
+    <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-semibold mb-6 text-center">Riuh Wisuda Juli 2023</h1>
+        <div class="flex flex-col md:flex-row md:space-x-4 overflow-x-auto">
+          <!-- Item 1 -->
+          <div class="md:w-64 p-4 rounded-lg shadow gallery-item">
+            <img src="r1.JPG" alt="Foto 1" class="w-full h-auto rounded-lg">
+          </div>
+          
+          <!-- Item 2 -->
+          <div class="md:w-64 p-4 rounded-lg shadow gallery-item">
+            <img src="r2.JPG" alt="Foto 2" class="w-full h-auto rounded-lg">
+          </div>
+          
+          <!-- Item 3 -->
+          <div class="md:w-64 p-4 rounded-lg shadow gallery-item">
+            <img src="r3.JPG" alt="Foto 3" class="w-full h-auto rounded-lg">
+          </div>
+          
+          <!-- Item 4 -->
+          <div class="md:w-64 p-4 rounded-lg shadow gallery-item">
+            <img src="r4.JPG" alt="Foto 4" class="w-full h-auto rounded-lg">
+          </div>
+
+          <!-- Item 5 -->
+          <div class="md:w-64 p-4 rounded-lg shadow gallery-item">
+            <img src="r5.JPG" alt="Foto 4" class="w-full h-auto rounded-lg">
+          </div>
+    
+          </div>
+            <p class="mt-0 text-center"><a href="https://drive.google.com/drive/folders/1mO4HhtW02lUhAVFthUjzrj7XcK7BnVcy?usp=drive_link" class="text-black underline hover:no-underline">Lihat Semua Foto</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-semibold mb-6 text-center">Halal Bi Halal HME 2023</h1>
+        <div class="flex flex-col md:flex-row md:space-x-4 overflow-x-auto">
+          <!-- Item 1 -->
+          <div class="md:w-64 p-4 rounded-lg shadow gallery-item">
+            <img src="h1.JPG" alt="Foto 1" class="w-full h-auto rounded-lg">
+          </div>
+          
+          <!-- Item 2 -->
+          <div class="md:w-64 p-4 rounded-lg shadow gallery-item">
+            <img src="h2.JPG" alt="Foto 2" class="w-full h-auto rounded-lg">
+          </div>
+          
+          <!-- Item 3 -->
+          <div class="md:w-64 p-4 rounded-lg shadow gallery-item">
+            <img src="h3.JPG" alt="Foto 3" class="w-full h-auto rounded-lg">
+          </div>
+          
+          <!-- Item 4 -->
+          <div class="md:w-64 p-4 rounded-lg shadow gallery-item">
+            <img src="h4.JPG" alt="Foto 4" class="w-full h-auto rounded-lg">
+          </div>
+
+          <!-- Item 5 -->
+          <div class="md:w-64 p-4 rounded-lg shadow gallery-item">
+            <img src="h5.JPG" alt="Foto 4" class="w-full h-auto rounded-lg">
+          </div>
+    
+          </div>
+            <p class="mt-0 text-center"><a href="https://drive.google.com/drive/u/1/folders/1m0TfxewOKeO6R68LJOGa7rzdwnCI50wS" class="text-black underline hover:no-underline">Lihat Semua Foto</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-semibold mb-6 text-center">Riuh WIsuda Maret 2023</h1>
+        <div class="flex flex-col md:flex-row md:space-x-4 overflow-x-auto">
+          <!-- Item 1 -->
+          <div class="md:w-64 p-4 rounded-lg shadow gallery-item">
+            <img src="m1.JPG" alt="Foto 1" class="w-full h-auto rounded-lg">
+          </div>
+          
+          <!-- Item 2 -->
+          <div class="md:w-64 p-4 rounded-lg shadow gallery-item">
+            <img src="m2.JPG" alt="Foto 2" class="w-full h-auto rounded-lg">
+          </div>
+          
+          <!-- Item 3 -->
+          <div class="md:w-64 p-4 rounded-lg shadow gallery-item">
+            <img src="m3.JPG" alt="Foto 3" class="w-full h-auto rounded-lg">
+          </div>
+          
+          <!-- Item 4 -->
+          <div class="md:w-64 p-4 rounded-lg shadow gallery-item">
+            <img src="m4.JPG" alt="Foto 4" class="w-full h-auto rounded-lg">
+          </div>
+
+          <!-- Item 5 -->
+          <div class="md:w-64 p-4 rounded-lg shadow gallery-item">
+            <img src="m5.JPG" alt="Foto 4" class="w-full h-auto rounded-lg">
+          </div>
+    
+          </div>
+            <p class="mt-0 text-center"><a href="https://bit.ly/Dokumentasi_Riuh_Wisuda_Maret2023" class="text-black underline hover:no-underline">Lihat Semua Foto</a></p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="bg-black text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>Hak Cipta © 2023 HME ITERA. All Rights Reserved.</p>
+        </div>
+      </footer>
+
+    <script>
+        const menuToggleBtn = document.getElementById('menu-toggle-btn');
+        const menuLinks = document.querySelector('.hidden.md\\:flex');
+      
+        menuToggleBtn.addEventListener('click', () => {
+          menuLinks.classList.toggle('hidden');
+        });
+    </script>
+      
+
+</body>
+</html>
