@@ -1,298 +1,307 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HME</title>
-  <link rel="icon" type="image/png" href="Logo.png">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-
-    .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #333;
-      color: #fff;
-      padding: 12px 20px;
-    }
-  </style>
-  
-</head>
-<body class="bg-gradient-to-b from-white to-gray-400 font-sans">
-
-  <nav class="navbar bg-black p-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <div class="flex items-center">
-        <div class="mr-4">
-          <img src="Logo.png" alt="Logo" class="h-20">
-        </div>
-        <div class="mr-4 ">
-          <img src="EL.png" alt="Logo" class="h-20">
-        </div>
-      </div>
-      <div class="hidden md:flex space-x-4">
-        <a href="beeranda.html" class="text-white">Beranda</a>
-        <a href="organigram.html" class="text-white">Organisasi</a>
-        <a href="galeri.html" class="text-white">Galeri HME</a>
-        <a href="kas.html" class="text-white">Info Keuangan HME</a>
-      </div>
-      <div class="md:hidden flex items-center">
-        <button id="menu-toggle-btn" class="text-white">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <section class="hero-bg py-60 text-black">
-    <div class="container mx-auto px-4">
-      <div class="text-center">
-        <h1 class="text-4xl font-bold">Selamat Datang di HME ITERA</h1>
-        <p class="mt-4 text-xl font-bold">SETRUM SETRUM SETRUM HME JAYA!!!</p>
-      </div>
-    </div>
-  </section>
-
-  <div class="container mx-auto px-4 py-8">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Bagian Hotline News Pertama -->
-        <div class="md:col-span-2">
-            <h2 class="text-xl font-semibold mb-4">Hotline News HME</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <!-- Berita 1 -->
-                <div class="rounded-lg shadow-md p-4">
-                    <img src="pelantikan.jpeg" alt="Gambar Berita 1" class="w-full h-auto mb-2 rounded-md">
-                    <h3 class="text-lg font-semibold">Pelantikan anggota Muda HME</h3>
-                    <p class="text-gray-600">Telah berjalan pelantikan anggota muda HME pada tanggal 24 Mei 2022</p>
-                    <a href="berita1.html" class="text-blue-500 hover:underline mt-2 inline-block">Baca Selengkapnya</a>
-                </div>
-                <!-- Berita 2 -->
-                <div class="rounded-lg shadow-md p-4">
-                    <img src="riuh.jpeg" alt="Gambar Berita 2" class="w-full h-auto mb-2 rounded-md">
-                    <h3 class="text-lg font-semibold">Riuh Wisuda Juli 2023</h3>
-                    <p class="text-gray-600">Telah terlaksana riuh wisuda Juli 2023 pada tanggal 17 Juli 2023</p>
-                    <a href="berita2.html" class="text-blue-500 hover:underline mt-2 inline-block">Baca Selengkapnya</a>
-                </div>
-                <!-- Berita 3 -->
-                <div class="rounded-lg shadow-md p-4">
-                  <img src="abdimas.jpeg" alt="Gambar Berita 1" class="w-full h-auto mb-2 rounded-md">
-                  <h3 class="text-lg font-semibold">ABDIMAS HME 2022</h3>
-                  <p class="text-gray-600">Puncak ABDIMAS 2022</p>
-                  <a href="berita3.html" class="text-blue-500 hover:underline mt-2 inline-block">Baca Selengkapnya</a>
-              </div>
-              <!-- Berita 4 -->
-              <div class="rounded-lg shadow-md p-4">
-                  <img src="apresiasi.jpg" alt="Gambar Berita 2" class="w-full h-auto mb-2 rounded-md">
-                  <h3 class="text-lg font-semibold">HME Apresiasi</h3>
-                  <p class="text-gray-600">Selamat kepaksa TIARA CHANDRA KIRANI (EL'20) memperoleh Medali Perunggu Babak Kualifikasi Pekan Olahraga Nasional 2024.</p>
-                  <a href="berita4.html" class="text-blue-500 hover:underline mt-2 inline-block">Baca Selengkapnya</a>
-              </div>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>HME</title>
+      <link rel="icon" type="image/png" href="web hme/Logo.png">
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+      <style>
+    
+        .navbar {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background-color: #333;
+          color: #fff;
+          padding: 12px 20px;
+        }
+    
+        .full-video {
+                height: 100vh;
+            }
+      </style>
+      
+    </head>
+    <body class="bg-gradient-to-b from-white to-gray-400 font-sans">
+    
+      <nav class="navbar bg-black p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="flex items-center">
+            <div class="mr-4">
+              <img src="Logo.png" alt="Logo" class="h-20">
             </div>
+            <div class="mr-4 ">
+              <img src="EL.png" alt="Logo" class="h-20">
+            </div>
+            <div class="mr-4 ">
+              <img src="itera.png" alt="Logo" class="h-20">
+            </div>
+          </div>
+          <div class="hidden md:flex space-x-5">
+            <a href="beeranda.html" class="text-white">Beranda</a>
+            <a href="organigram.html" class="text-white">Organisasi</a>
+            <a href="galeri.html" class="text-white">Galeri HME</a>
+            <a href="kas.html" class="text-white">Info Keuangan HME</a>
+            <a href="kas.html" class="text-white">Berita HME</a>
+          </div>
+          <div class="md:hidden flex items-center">
+            <button id="menu-toggle-btn" class="text-white">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
         </div>
-        <!-- Kontak Section -->
-        <div class="md:col-span-1 rounded-lg shadow-md p-4" style="height: 400px;">
-            <h2 class="text-xl font-semibold mb-4">Informasi Departemen</h2>
-            <div class="text-gray-600">
-                <p class="mb-2">
+      </nav>
+    
+      <section class="bg-gray-900 my-20 text-white mb-0">
+        <div class="full-video overflow-hidden">
+            <video class="w-full h-full object-cover" autoplay loop muted>
+                <source src="vid1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+    
+      <div class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Bagian Hotline News Pertama -->
+            <div class="md:col-span-2">
+                <h2 class="text-xl font-semibold mb-4">Hotline News HME</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Berita 1 -->
+                    <div class="rounded-lg shadow-md p-4">
+                        <img src="pelantikan.jpeg" alt="Gambar Berita 1" class="w-full h-auto mb-2 rounded-md">
+                        <h3 class="text-lg font-semibold">Pelantikan anggota Muda HME</h3>
+                        <p class="text-gray-600">Telah berjalan pelantikan anggota muda HME pada tanggal 24 Mei 2022</p>
+                        <a href="berita1.html" class="text-blue-500 hover:underline mt-2 inline-block">Baca Selengkapnya</a>
+                    </div>
+                    <!-- Berita 2 -->
+                    <div class="rounded-lg shadow-md p-4">
+                        <img src="riuh.jpeg" alt="Gambar Berita 2" class="w-full h-auto mb-2 rounded-md">
+                        <h3 class="text-lg font-semibold">Riuh Wisuda Juli 2023</h3>
+                        <p class="text-gray-600">Telah terlaksana riuh wisuda Juli 2023 pada tanggal 17 Juli 2023</p>
+                        <a href="berita2.html" class="text-blue-500 hover:underline mt-2 inline-block">Baca Selengkapnya</a>
+                    </div>
+                    <!-- Berita 3 -->
+                    <div class="rounded-lg shadow-md p-4">
+                      <img src="abdimas.jpeg" alt="Gambar Berita 1" class="w-full h-auto mb-2 rounded-md">
+                      <h3 class="text-lg font-semibold">ABDIMAS HME 2022</h3>
+                      <p class="text-gray-600">Puncak ABDIMAS 2022</p>
+                      <a href="berita3.html" class="text-blue-500 hover:underline mt-2 inline-block">Baca Selengkapnya</a>
+                  </div>
+                  <!-- Berita 4 -->
+                  <div class="rounded-lg shadow-md p-4">
+                      <img src="web hme/apresiasi.jpg" alt="Gambar Berita 2" class="w-full h-auto mb-2 rounded-md">
+                      <h3 class="text-lg font-semibold">HME Apresiasi</h3>
+                      <p class="text-gray-600">Selamat kepaksa TIARA CHANDRA KIRANI (EL'20) memperoleh Medali Perunggu Babak Kualifikasi Pekan Olahraga Nasional 2024.</p>
+                      <a href="berita4.html" class="text-blue-500 hover:underline mt-2 inline-block">Baca Selengkapnya</a>
+                  </div>
+            </div>
+            </div>
+            <!-- Kontak Section -->
+            <div class="md:col-span-1 rounded-lg shadow-md p-4" style="height: 400px;">
+                <h2 class="text-xl font-semibold mb-4">Informasi Departemen</h2>
+                <div class="text-gray-600">
+                  <p class="mb-2">
                     <a href="pembina.html" class="text-blue-500 hover:underline">Pembina</a>
-                </p>
-                <p class="mb-2">
-                    <a href="senator.html" class="text-blue-500 hover:underline">Senator</a>
-                </p>
-                <p>
-                    <a href="dph.html" class="text-blue-500 hover:underline">DPH</a>
-                </p>
-                <p class="mb-2">
-                  <a href="kesekjenan.html" class="text-blue-500 hover:underline">Kesekretariatan</a>
-                </p>
-                <p class="mb-2">
-                  <a href="bendahara.html" class="text-blue-500 hover:underline">Bendahara Umum</a>
-                </p>
-                <p class="mb-2">
-                  <a href="psda.html" class="text-blue-500 hover:underline">Departemen PSDA</a>
-                </p>
-                <p class="mb-2">
-                  <a href="eksternal.html" class="text-blue-500 hover:underline">Departemen Eksternal</a>
-                </p>
-                <p class="mb-2">
-                  <a href="internal.html" class="text-blue-500 hover:underline">Departemen Inetrnal</a>
-                </p>
-                <p class="mb-2">
-                  <a href="kominfo.html" class="text-blue-500 hover:underline">Departemen Kominfo</a>
-                </p>
-                <p class="mb-2">
-                  <a href="tekno.html" class="text-blue-500 hover:underline">Departemen Teknokreator</a>
-                </p>
-            </div>
-        </div>
-        <!-- Bagian Hotline News Kedua -->
-        <div class="md:col-span-2 mt-8">
-            <h2 class="text-xl font-semibold mb-4">Informasi HME</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <!-- Sejarah HME -->
-                <div class="rounded-lg shadow-md p-4">
-                    <img src="jam.jpeg" alt="Gambar Berita 3" class="w-20 h-20 mb-2 rounded-md">
-                    <h3 class="text-lg font-semibold">Sejarah HME</h3>
-                    <p class="text-gray-600 text-justify">HME diresmikan pada 10 mei 2019 dimana sebelumnya HME ini bergabung bersama prodi informatika dengan nama HMEI
-                      HMEI dibubarkan atau dipecah menjadi HME dan HMIF pada tanggal 3 MEI 2019. Selanjutnya dengan begitu HME dibentuk dengan ketua himpunan saat Itu
-                      bang akew.</p>
-                    <a href="berita3.html" class="text-blue-500 hover:underline mt-2 inline-block">Baca Selengkapnya</a>
-                </div>
-                <!-- Makna Logo -->
-                <div class="rounded-lg shadow-md p-4">
-                  <img src="Logo.png" alt="Gambar Berita 3" class="w-20 h-20 mb-2 rounded-md">
-                  <h3 class="text-lg font-semibold">Makna Logo</h3>
-                  <p class="text-gray-600 text-justify">Makana logo dari HME sendiri yaitu warna kuning yang mengartikan HME cerdas, kreatif, dan bijaksana,
-                    lalu ada warna biru yang melambangkan HME yang stabil, percaya diri serta tenang dalam mengambil keputusan.</p>
-                  <a href="maknalogo.html" class="text-blue-500 hover:underline mt-2 inline-block">Baca Selengkapnya</a>
-                </div>
-                <!-- Kepengurusan -->
-                <div class="rounded-lg shadow-md p-4">
-                    <img src="buku.jpg" alt="Gambar Berita 4" class="w-20 h-20 mb-2 rounded-md">
-                    <h3 class="text-lg font-semibold">Kepengurusan BP HME</h3>
-                    <p class="text-gray-600">Organigram serta progja BP HME 2023/2024</p>
-                    <a href="progja.html" class="text-blue-500 hover:underline mt-2 inline-block">Baca Selengkapnya</a>
-                </div>
-                <!-- Rekan Jejak -->
-                <div class="rounded-lg shadow-md p-4">
-                  <img src="ketua.png" alt="Gambar Berita 4" class="w-20 h-20 mb-2 rounded-md">
-                  <h3 class="text-lg font-semibold">Rekam jejak ketua himpunan</h3>
-                  <p class="text-gray-600">Ketua himpunan dari awal berdiri HME sampai sekarang</p>
-                  <a href="jejak.html" class="text-blue-500 hover:underline mt-2 inline-block">Baca Selengkapnya</a>
+                  </p>
+                    <p class="mb-2">
+                        <a href="senator.html" class="text-blue-500 hover:underline">Senator</a>
+                    </p>
+                    <p>
+                        <a href="dph.html" class="text-blue-500 hover:underline">DPH</a>
+                    </p>
+                    <p class="mb-2">
+                      <a href="kesekjenan.html" class="text-blue-500 hover:underline">Kesekjenan</a>
+                    </p>
+                    <p class="mb-2">
+                      <a href="bendahara.html" class="text-blue-500 hover:underline">Bendahara Umum</a>
+                    </p>
+                    <p class="mb-2">
+                      <a href="psda.html" class="text-blue-500 hover:underline">Departemen PSDA</a>
+                    </p>
+                    <p class="mb-2">
+                      <a href="eksternal.html" class="text-blue-500 hover:underline">Departemen Eksternal</a>
+                    </p>
+                    <p class="mb-2">
+                      <a href="internal.html" class="text-blue-500 hover:underline">Departemen Inetrnal</a>
+                    </p>
+                    <p class="mb-2">
+                      <a href="kominfo.html" class="text-blue-500 hover:underline">Departemen Kominfo</a>
+                    </p>
+                    <p class="mb-2">
+                      <a href="tekno.html" class="text-blue-500 hover:underline">Departemen Teknokreator</a>
+                    </p>
                 </div>
             </div>
+            <!-- Bagian Hotline News Kedua -->
+            <div class="md:col-span-2 mt-8">
+                <h2 class="text-xl font-semibold mb-4">Informasi HME</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Sejarah HME -->
+                    <div class="rounded-lg shadow-md p-4">
+                        <img src="jam.jpeg" alt="Gambar Berita 3" class="w-20 h-20 mb-2 rounded-md">
+                        <h3 class="text-lg font-semibold">Sejarah HME</h3>
+                        <p class="text-gray-600 text-justify">HME diresmikan pada 10 mei 2019 dimana sebelumnya HME ini bergabung bersama prodi informatika dengan nama HMEI
+                          HMEI dibubarkan atau dipecah menjadi HME dan HMIF pada tanggal 3 MEI 2019. Selanjutnya dengan begitu HME dibentuk dengan ketua himpunan saat Itu
+                          bang akew.</p>
+                        <a href="berita3.html" class="text-blue-500 hover:underline mt-2 inline-block">Baca Selengkapnya</a>
+                    </div>
+                    <!-- Makna Logo -->
+                    <div class="rounded-lg shadow-md p-4">
+                      <img src="Logo.png" alt="Gambar Berita 3" class="w-20 h-20 mb-2 rounded-md">
+                      <h3 class="text-lg font-semibold">Makna Logo</h3>
+                      <p class="text-gray-600 text-justify">Makana logo dari HME sendiri yaitu warna kuning yang mengartikan HME cerdas, kreatif, dan bijaksana,
+                        lalu ada warna biru yang melambangkan HME yang stabil, percaya diri serta tenang dalam mengambil keputusan.</p>
+                      <a href="maknalogo.html" class="text-blue-500 hover:underline mt-2 inline-block">Baca Selengkapnya</a>
+                    </div>
+                    <!-- Kepengurusan -->
+                    <div class="rounded-lg shadow-md p-4">
+                        <img src="buku.jpg" alt="Gambar Berita 4" class="w-20 h-20 mb-2 rounded-md">
+                        <h3 class="text-lg font-semibold">Kepengurusan BP HME</h3>
+                        <p class="text-gray-600">Organigram serta progja BP HME 2023/2024</p>
+                        <a href="progja.html" class="text-blue-500 hover:underline mt-2 inline-block">Baca Selengkapnya</a>
+                    </div>
+                    <!-- Rekan Jejak -->
+                    <div class="rounded-lg shadow-md p-4">
+                      <img src="ketua.png" alt="Gambar Berita 4" class="w-20 h-20 mb-2 rounded-md">
+                      <h3 class="text-lg font-semibold">Rekam jejak ketua himpunan</h3>
+                      <p class="text-gray-600">Ketua himpunan dari awal berdiri HME sampai sekarang</p>
+                      <a href="jejak.html" class="text-blue-500 hover:underline mt-2 inline-block">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-
-  <div class="bg-gray-500 container mx-auto p-4 sm:p-8">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-        <!-- Section 1: Gambar -->
-        <div class="p-4 flex items-center mx-auto">
-            <img src="Logo.png" alt="Gambar" class="w-32 h-32 object-cover mb-4">
-        </div>
-        <!-- Section 2: Tulisan -->
-        <div class="p-4">
-            <h2 class="text-xl font-semibold mb-4">Institut Teknologi Sumatera</h2>
-            <p class="text-black">Jl. Terusan Ryacudu, Way Huwi, Kec. Jati Agung, Kabupaten Lampung Selatan, Lampung</p>
-        </div>
-        <!-- Section 3: Kontak -->
-        <div class="p-4">
-            <h2 class="text-xl font-semibold mb-4">Kontak</h2>
-            <ul class="list-none flex flex-row space-x-4 mb-10">
-                <li>
-                    <a href="https://t.me/hme_itera">
-                        <img src="tele.png" alt="telegram" class="w-6 h-6">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://instagram.com/hme_itera?igshid=MzRlODBiNWFlZA==">
-                        <img src="instagram.png" alt="Instagram" class="w-6 h-6">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.tiktok.com/@hme_itera?_t=8edpjvAJkyg&_r=1">
-                        <img src="tiktok.png" alt="TikTok" class="w-6 h-6">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://youtube.com/@hmeitera5233">
-                        <img src="youtube.png" alt="YouTube" class="w-6 h-6">
-                    </a>
-                </li>
-            </ul>
-            <a href="mailto:info@hotlinenews.com">
-              <p class="text-white underline">HMEITERA@gmail.com</p>
-            </a>
+    
+      <div class="bg-gray-500 container mx-auto p-4 sm:p-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <!-- Section 1: Gambar -->
+            <div class="p-4 flex items-center mx-auto">
+                <img src="Logo.png" alt="Gambar" class="w-32 h-32 object-cover mb-4">
+            </div>
+            <!-- Section 2: Tulisan -->
+            <div class="p-4">
+                <h2 class="text-xl font-semibold mb-4">Institut Teknologi Sumatera</h2>
+                <p class="text-black">Jl. Terusan Ryacudu, Way Huwi, Kec. Jati Agung, Kabupaten Lampung Selatan, Lampung</p>
+            </div>
+            <!-- Section 3: Kontak -->
+            <div class="p-4">
+                <h2 class="text-xl font-semibold mb-4">Kontak</h2>
+                <ul class="list-none flex flex-row space-x-4 mb-10">
+                    <li>
+                        <a href="https://t.me/hme_itera">
+                            <img src="tele.png" alt="telegram" class="w-6 h-6">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/hme_itera?igshid=MzRlODBiNWFlZA==">
+                            <img src="instagram.png" alt="Instagram" class="w-6 h-6">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@hme_itera?_t=8edpjvAJkyg&_r=1">
+                            <img src="tiktok.png" alt="TikTok" class="w-6 h-6">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com/@hmeitera5233">
+                            <img src="youtube.png" alt="YouTube" class="w-6 h-6">
+                        </a>
+                    </li>
+                </ul>
+                <a href="mailto:info@hotlinenews.com">
+                  <p class="text-white underline">HMEITERA@gmail.com</p>
+                </a>
+            </div>
         </div>
     </div>
-</div>
-
-  <style>
-    /* Ubah tinggi section sampul sesuai kebutuhan */
-    .hero-bg {
-      min-height: 650px;
-      /* Ganti URL dengan path atau link gambar yang ingin digunakan sebagai latar belakang */
-      background-image: url('Logo.png');
-      background-size: cover;
-      background-position: center;
-    }
-
-    .kon-bg {
-      min-height: 200px;
-      /* Ganti URL dengan path atau link gambar yang ingin digunakan sebagai latar belakang */
-      background-color: gray;
-      background-size: contain;
-      background-position: center;
-    }
-  
-    /* Ganti font sesuai preferensi Anda */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-    }
-  
-    /* Posisi teks di tengah secara horizontal dan vertikal */
-    .text-center {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; /* Menengahkan vertikal */
-      height: 100%; /* Memberi tinggi 100% untuk section agar tulisan berada di tengah */
-    }
-  
-    /* Ganti warna teks jika perlu */
-    .text-white {
-      color: white;
-    }
-
-    .logo {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin: 0 10px;
-        background-size: cover;
-    }
-
-    .email {
-        background-image: url('email.png');
-    }
-
-    .instagram {
-        background-image: url('instagram.png');
-    }
-
-    .youtube {
-        background-image: url('youtube.png');
-    }
-
-    .tiktok {
-        background-image: url('tiktok.png');
-    }
-
-    .telegram {
-      background-image: url('tele.png');
-    }
-  </style>
-  
-  <footer class="bg-black text-white py-6">
-    <div class="container mx-auto text-center">
-        <p>Hak Cipta © 2023 HME ITERA. All Rights Reserved.</p>
-    </div>
-  </footer>
-
-<script>
-  const menuToggleBtn = document.getElementById('menu-toggle-btn');
-  const menuLinks = document.querySelector('.hidden.md\\:flex');
-
-  menuToggleBtn.addEventListener('click', () => {
-    menuLinks.classList.toggle('hidden');
-  });
-</script>
-
-</body>
-</html>
+    
+    <footer class="bg-black text-white py-6">
+      <div class="container mx-auto text-center">
+          <p>Hak Cipta © 2023 HME ITERA. All Rights Reserved.</p>
+      </div>
+    </footer>
+    
+      <style>
+        /* Ubah tinggi section sampul sesuai kebutuhan */
+        .hero-bg {
+          min-height: 650px;
+          /* Ganti URL dengan path atau link gambar yang ingin digunakan sebagai latar belakang */
+          background-color: aqua;
+          background-size: cover;
+          background-position: center;
+        }
+    
+        .kon-bg {
+          min-height: 200px;
+          /* Ganti URL dengan path atau link gambar yang ingin digunakan sebagai latar belakang */
+          background-color: gray;
+          background-size: auto;
+          background-position: center;
+        }
+      
+        /* Ganti font sesuai preferensi Anda */
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+        }
+      
+        /* Posisi teks di tengah secara horizontal dan vertikal */
+        .text-center {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center; /* Menengahkan vertikal */
+          height: 100%; /* Memberi tinggi 100% untuk section agar tulisan berada di tengah */
+        }
+      
+        /* Ganti warna teks jika perlu */
+        .text-white {
+          color: white;
+        }
+    
+        .logo {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 0 10px;
+            background-size: cover;
+        }
+    
+        .email {
+            background-image: url('email.png');
+        }
+    
+        .instagram {
+            background-image: url('instagram.png');
+        }
+    
+        .youtube {
+            background-image: url('youtube.png');
+        }
+    
+        .tiktok {
+            background-image: url('tiktok.png');
+        }
+    
+        .telegram {
+          background-image: url('tele.png');
+        }
+      </style>
+    
+    <script>
+      const menuToggleBtn = document.getElementById('menu-toggle-btn');
+      const menuLinks = document.querySelector('.hidden.md\\:flex');
+    
+      menuToggleBtn.addEventListener('click', () => {
+        menuLinks.classList.toggle('hidden');
+      });
+    </script>
+    
+    </body>
+    
+    </html>
