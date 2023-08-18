@@ -17,6 +17,10 @@
       color: #fff;
       padding: 12px 20px;
     }
+
+    .full-video {
+            height: 100vh;
+        }
   </style>
   
 </head>
@@ -52,14 +56,14 @@
     </div>
   </nav>
 
-  <section class="hero-bg py-60 text-black">
-    <div class="container mx-auto px-4">
-      <div class="text-center">
-        <h1 class="text-4xl font-bold">Selamat Jalan jai</h1>
-        <p class="mt-4 text-xl font-bold">Semoga Tenang</p>
-      </div>
+  <section class="bg-gray-900 my-20 text-white mb-0">
+    <div class="full-video overflow-hidden">
+        <video class="w-full h-full object-cover" autoplay loop muted>
+            <source src="web hme/vid1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
-  </section>
+</section>
 
   <div class="container mx-auto px-4 py-8">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
