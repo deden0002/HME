@@ -6,61 +6,74 @@
       <title>HME</title>
       <link rel="icon" type="image/png" href="Logo.png">
       <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-      <style>
-    
-        .navbar {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          background-color: #333;
-          color: #fff;
-          padding: 12px 20px;
-        }
-    
-        .full-video {
-                height: 100vh;
-            }
-      </style>
+      <link rel="stylesheet" href="gaya.css">
       
-    </head>
-    <body class="bg-gradient-to-b from-white to-gray-400 font-sans">
-    
-      <nav class="navbar bg-black p-4">
-        <div class="container mx-auto flex justify-between items-center">
-          <div class="flex items-center">
-            <div class="mr-4">
-              <img src="Logo.png" alt="Logo" class="h-20">
-            </div>
-            <div class="mr-4 ">
-              <img src="EL.png" alt="Logo" class="h-20">
-            </div>
-          </div>
-          <div class="hidden md:flex space-x-5">
-            <a href="beeranda.html" class="text-white">Beranda</a>
-            <a href="organigram.html" class="text-white">Organisasi</a>
-            <a href="galeri.html" class="text-white">Galeri HME</a>
-            <a href="kas.html" class="text-white">Info Keuangan HME</a>
-            <a href="kas.html" class="text-white">Berita HME</a>
-          </div>
-          <div class="md:hidden flex items-center">
-            <button id="menu-toggle-btn" class="text-white">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+</head>
+  <body class="bg-gradient-to-b from-white to-gray-400 font-sans">
+    <header class="navbar-cover">  
+    <nav class="p-4">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center">
+          <img src="EL.png" alt="Logo 2" class="h-16 w-16 mr-2">
+          <img src="Logo.png" alt="Logo 1" class="h-16 w-16">
+        </div>
+        <div class="hidden md:flex space-x-5">
+          <a href="beeranda.html" class="text-black">Beranda</a>
+          <a href="organigram.html" class="text-black">Organisasi</a>
+          <a href="galeri.html" class="text-black">Galeri HME</a>
+          <a href="kas.html" class="text-black">Info Keuangan HME</a>
+          <div class="relative group">
+            <button class="block text-black py-0 w-full text-left focus:outline-none">
+              Berita HME
+              <svg class="h-4 w-4 inline ml-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M9.29289 13.2929C9.68342 13.6834 10.3166 13.6834 10.7071 13.2929L14.7071 9.29289C15.0976 8.90237 15.0976 8.2692 14.7071 7.87868C14.3166 7.48815 13.6834 7.48815 13.2929 7.87868L10 11.1716L6.70711 7.87868C6.31658 7.48815 5.68342 7.48815 5.29289 7.87868C4.90237 8.2692 4.90237 8.90237 5.29289 9.29289L9.29289 13.2929Z" clip-rule="evenodd"></path>
               </svg>
             </button>
+            <div class="submenu absolute left-0 mt-2 w-40 text-black py-2 px-4 rounded shadow-lg">
+              <a href="berita1.html" class="block">ITERA</a>
+              <a href="berita2.html" class="block">Beasiswa</a>
+              <a href="berita3.html" class="block">dan lainnya</a>
+            </div>
           </div>
         </div>
-      </nav>
-    
-      <section class="bg-gray-900 my-20 text-white mb-0">
+        <div class="md:hidden">
+          <button id="mobileMenuButton" class="text-black">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobileMenu" class="hidden md:hidden mt-4">
+        <a href="beeranda.html" class="block text-black py-2">Beranda</a>
+        <a href="organigram.html" class="block text-black py-2">Organisasi</a>
+        <a href="galeri.html" class="block text-black py-2">Galeri HME</a>
+        <a href="kas.html" class="block text-black py-2">Info Keuangan HME</a>
+        <div class="relative">
+          <button id="mobileContactButton" class="block text-black py-2 w-full text-left focus:outline-none">
+            Berita HME
+            <svg class="h-4 w-4 inline ml-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M9.29289 13.2929C9.68342 13.6834 10.3166 13.6834 10.7071 13.2929L14.7071 9.29289C15.0976 8.90237 15.0976 8.2692 14.7071 7.87868C14.3166 7.48815 13.6834 7.48815 13.2929 7.87868L10 11.1716L6.70711 7.87868C6.31658 7.48815 5.68342 7.48815 5.29289 7.87868C4.90237 8.2692 4.90237 8.90237 5.29289 9.29289L9.29289 13.2929Z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          <div class="hidden mt-2" id="mobileContactSubmenu">
+            <a href="berita1.html" class="block text-black py-2 pl-6">ITERA</a>
+            <a href="berita2.html" class="block text-black py-2 pl-6">Beasiswa</a>
+            <a href="berita3.html" class="block text-black py-2 pl-6">dan lainnya</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+      <section class="cover-section">
         <div class="full-video overflow-hidden">
             <video class="w-full h-full object-cover" autoplay loop muted>
                 <source src="vid1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-    </section>
+      </section>
     
       <div class="container mx-auto px-4 py-8">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -223,82 +236,7 @@
       </div>
     </footer>
     
-      <style>
-        /* Ubah tinggi section sampul sesuai kebutuhan */
-        .hero-bg {
-          min-height: 650px;
-          /* Ganti URL dengan path atau link gambar yang ingin digunakan sebagai latar belakang */
-          background-color: aqua;
-          background-size: cover;
-          background-position: center;
-        }
+    <script async src="gaya.js"></script>
     
-        .kon-bg {
-          min-height: 200px;
-          /* Ganti URL dengan path atau link gambar yang ingin digunakan sebagai latar belakang */
-          background-color: gray;
-          background-size: auto;
-          background-position: center;
-        }
-      
-        /* Ganti font sesuai preferensi Anda */
-        body {
-          font-family: Arial, sans-serif;
-          margin: 0;
-        }
-      
-        /* Posisi teks di tengah secara horizontal dan vertikal */
-        .text-center {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center; /* Menengahkan vertikal */
-          height: 100%; /* Memberi tinggi 100% untuk section agar tulisan berada di tengah */
-        }
-      
-        /* Ganti warna teks jika perlu */
-        .text-white {
-          color: white;
-        }
-    
-        .logo {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            margin: 0 10px;
-            background-size: cover;
-        }
-    
-        .email {
-            background-image: url('email.png');
-        }
-    
-        .instagram {
-            background-image: url('instagram.png');
-        }
-    
-        .youtube {
-            background-image: url('youtube.png');
-        }
-    
-        .tiktok {
-            background-image: url('tiktok.png');
-        }
-    
-        .telegram {
-          background-image: url('tele.png');
-        }
-      </style>
-    
-    <script>
-      const menuToggleBtn = document.getElementById('menu-toggle-btn');
-      const menuLinks = document.querySelector('.hidden.md\\:flex');
-    
-      menuToggleBtn.addEventListener('click', () => {
-        menuLinks.classList.toggle('hidden');
-      });
-    </script>
-    
-    </body>
-    
-    </html>
+</body>
+</html>
