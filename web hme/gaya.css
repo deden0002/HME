@@ -1,0 +1,93 @@
+.submenu {
+    display: none;
+  }
+
+  .group:hover .submenu {
+    display: block;
+  }
+
+  .full-video {
+    height: 100vh;
+  }
+
+  .navbar-cover {
+    position: fixed;
+    top: 0;
+     left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure navbar is above other content */
+  }
+
+  .cover-section {
+    /* Add padding to make space for the fixed navbar */
+    padding-top: 0px; /* Adjust as needed */
+  }
+
+  .navbar-cover.scrolled {
+    background-color: rgba(67, 65, 65, 0.8); /* Example background color */
+    }
+
+    /* Ubah tinggi section sampul sesuai kebutuhan */
+    .hero-bg {
+        min-height: 650px;
+        /* Ganti URL dengan path atau link gambar yang ingin digunakan sebagai latar belakang */
+        background-color: aqua;
+        background-size: cover;
+        background-position: center;
+      }
+  
+      .kon-bg {
+        min-height: 200px;
+        /* Ganti URL dengan path atau link gambar yang ingin digunakan sebagai latar belakang */
+        background-color: gray;
+        background-size: auto;
+        background-position: center;
+      }
+    
+      /* Ganti font sesuai preferensi Anda */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+    
+      /* Posisi teks di tengah secara horizontal dan vertikal */
+      .text-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /* Menengahkan vertikal */
+        height: 100%; /* Memberi tinggi 100% untuk section agar tulisan berada di tengah */
+      }
+    
+      /* Ganti warna teks jika perlu */
+      .text-white {
+        color: white;
+      }
+  
+      .logo {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          margin: 0 10px;
+          background-size: cover;
+      }
+  
+      .email {
+          background-image: url('email.png');
+      }
+  
+      .instagram {
+          background-image: url('instagram.png');
+      }
+  
+      .youtube {
+          background-image: url('youtube.png');
+      }
+  
+      .tiktok {
+          background-image: url('tiktok.png');
+      }
+  
+      .telegram {
+        background-image: url('tele.png');
+      }
